@@ -1,4 +1,24 @@
 @media only screen and (max-device-width: 450px) {
+  h1 {
+    text-align: center;
+  }
+
+  h2 {
+    line-height: 68px;
+    font-size: 64px;
+  }
+
+  h5 {
+    font-size: 36px;
+  }
+
+  p.card {
+    font-size: 24px;
+    margin-top: 12px;
+    text-align: center;
+    max-width: 70%;
+  }
+
   button {
     height: 80px;
     font-size: 24px;
@@ -7,8 +27,8 @@
   }
 
   .content-container {
-    width: 96vw;
-    max-width: 96vw;
+    width: 94vw;
+    max-width: 94vw;
   }
 
   .bar-header {
@@ -64,9 +84,20 @@
   }
 
   .skill-cards-container {
-    grid-template-columns: auto;
-    row-gap: 36px;
-    margin-top: 12px;
+    row-gap: 55px;
+    justify-content: space-between;
+    grid-template-columns: auto auto;
+    margin-top: 44px;
+    width: 100%;
+  }
+
+  .skill-cards {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    width: 44vw;
+    height: auto;
+    padding-top: 16px;
   }
 
   .section-portfolio-grid {
@@ -91,5 +122,11 @@
   .hero-info-icons-container {
     margin-top: 40px;
     width: 60%;
+  }
+
+  .section-skill {
+    align-items: flex-start;
+    justify-content: flex-start;
+    width: 100%;
   }
 }
