@@ -4,6 +4,7 @@
     <head>
       <title>Caio Godoy</title>
       <link rel="stylesheet" href="styles.css" />
+      <script src="index.js"></script>
     </head>
   </head>
   <body>
@@ -13,11 +14,23 @@
           <div class="bar-header">
             <h2 class="titel-header">Caio Godoy</h2>
             <div>
-              <a class="links-header">About</a>
-              <a class="links-header">Skills</a>
-              <a class="links-header">Portfolio</a>
+              <a onclick="onClickScrollTo('section-skill')" class="links-header"
+                >Skills</a
+              >
+              <a
+                onclick="onClickScrollTo('section-portfolio')"
+                class="links-header"
+                >Portfolio</a
+              >
+              <a
+                onclick="onClickScrollTo('section-experiences')"
+                class="links-header"
+                >Experience</a
+              >
             </div>
-            <button>CONTACT</button>
+            <button onclick="onClickScrollTo('section-contact')">
+              CONTACT
+            </button>
           </div>
           <div class="hero-info">
             <div>
@@ -27,7 +40,9 @@
                 interactive, responsive and user friendly websites. Specialized
                 in Front-End Web Developer and Web Designer.
               </p>
-              <button>Contact Me</button>
+              <button onclick="onClickScrollTo('section-contact')">
+                Contact Me
+              </button>
               <div class="hero-info-icons-container">
                 <a>
                   <img
@@ -68,7 +83,7 @@
             </div>
           </div>
         </section>
-        <section class="section-skill">
+        <section class="section-skill" id="section-skill">
           <h2>MY SKILLS</h2>
           <h2 class="green">WHAT I CAN DO</h2>
           <div class="skill-cards-container">
@@ -148,7 +163,7 @@
             </div>
           </div>
         </section>
-        <section class="section-portfolio">
+        <section class="section-portfolio" id="section-portfolio">
           <h2>Portfolio</h2>
           <h2 class="green">PROJECTS</h2>
           <div class="section-portfolio-grid">
@@ -229,7 +244,7 @@
             </div>
           </div>
         </section>
-        <section class="section-experiences">
+        <section class="section-experiences" id="section-experiences">
           <h2>Professional</h2>
           <h2 class="green">EXPERIENCE</h2>
           <div class="section-experiences-card">
@@ -265,7 +280,7 @@
             </div>
           </div>
         </section>
-        <section class="section-contact">
+        <section class="section-contact" id="section-contact">
           <h2>How can i</h2>
           <h2 class="green">HELP YOU ?</h2>
           <p>Estou à diposição para ajudar o seu projeto ou sua empresa.</p>
