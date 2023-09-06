@@ -181,11 +181,11 @@ a {
 .skill-cards-container {
   display: grid;
   width: 100%;
+  column-gap: 36px;
   grid-template-columns: auto auto auto;
   grid-template-rows: auto;
   justify-content: center;
   align-content: center;
-  column-gap: 36px;
   margin-top: 48px;
 }
 
@@ -380,4 +380,44 @@ a {
   align-items: center;
   justify-content: space-between;
   width: 40%;
+}
+
+@media only screen and (max-device-width: 450px) {
+  .content-container {
+    width: 96vw;
+    max-width: 96vw;
+  }
+
+  .bar-header {
+    width: 100%;
+  }
+
+  .hero-info {
+    width: 100%;
+  }
+
+  .hero-info-image {
+    width: 202px;
+    height: 100%;
+  }
+
+  .skill-cards-container {
+    grid-template-columns: auto;
+    row-gap: 36px;
+    margin-top: 12px;
+  }
+
+  .section-portfolio-grid {
+    row-gap: 36px;
+    grid-template-columns: auto;
+    margin-top: 24px;
+  }
+
+  .section-experiences-card {
+    width: 90vw;
+  }
+
+  .footer-content {
+    width: 100%;
+  }
 }
